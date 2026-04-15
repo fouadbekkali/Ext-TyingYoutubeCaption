@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "YouTube description capture",
+  "name": "YouTube Caption Capture",
   "version": "1.0",
-  "description": "Captures YouTube descriptions in real-time",
-  "author" : "BEKKALI AMINE",
+  "description": "Captures YouTube captions in real-time",
+  "author": "BEKKALI AMINE",
   "permissions": ["activeTab", "scripting", "storage", "sidePanel"],
 
   "background": {
@@ -23,10 +23,14 @@
 
   "action": {
     "default_title": "Caption Capture",
-    "default_icon": "icon.png"
-    
+    "default_icon": {
+      "48": "icon.png",
+      "128": "icon.png"
+    }
   },
+
   "icons": {
-  "128": "icon.png"
-}
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }

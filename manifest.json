@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Caption Capture",
+  "version": "1.0",
+  "description": "Captures YouTube captions in real-time",
+
+  "permissions": ["activeTab", "scripting", "storage", "sidePanel"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+
+  "action": {
+    "default_title": "Caption Capture"
+  }
+}
